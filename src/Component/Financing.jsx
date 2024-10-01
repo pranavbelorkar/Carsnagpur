@@ -11,6 +11,59 @@ const LoanFeature = ({ title, value, subtitle } ) => (
   </div>
 )
 
+
+const features = [
+  {
+    title: "Finance it\nyour way!",
+    description: "Customise EMIs with as low as zero down payment and up to 6 year loan tenure starting at 12% ROI",
+    icon: (
+      <svg xmlns="http://www.w3.org/2000/svg" className="w-full h-full" viewBox="0 0 100 100" fill="none">
+        <rect width="60" height="80" rx="4" fill="#1E3A8A" />
+        <rect x="10" y="10" width="40" height="10" rx="2" fill="#FFA500" />
+        <rect x="10" y="30" width="40" height="10" rx="2" fill="#FFA500" />
+        <rect x="10" y="50" width="40" height="10" rx="2" fill="#FFA500" />
+        <circle cx="80" cy="70" r="20" fill="#FFA500" />
+        <path d="M70 70L80 60L90 70M80 60V80" stroke="#1E3A8A" strokeWidth="4" />
+      </svg>
+    ),
+  },
+  {
+    title: "Loan offer\nin minutes",
+    description: "Check your eligibility and get a loan offer within 2 minutes with minimal documentation",
+    icon: (
+      <svg xmlns="http://www.w3.org/2000/svg" className="w-full h-full" viewBox="0 0 100 100" fill="none">
+        <circle cx="50" cy="50" r="40" fill="#1E3A8A" />
+        <path d="M50 20V50L70 70" stroke="#FFA500" strokeWidth="6" strokeLinecap="round" />
+        <path d="M20 50H30M70 50H80M50 20V30M50 70V80" stroke="#FFA500" strokeWidth="4" strokeLinecap="round" />
+      </svg>
+    ),
+  },
+  {
+    title: "Pan-India",
+    description: "Coverage across all major Indian cities with 15,000+ serviceable PIN codes*",
+    icon: (
+      <svg xmlns="http://www.w3.org/2000/svg" className="w-full h-full" viewBox="0 0 100 100" fill="none">
+        <path d="M20 80L50 20L80 80H20Z" fill="#1E3A8A" />
+        <circle cx="50" cy="40" r="10" fill="#FFA500" />
+        <path d="M40 70H60L50 80L40 70Z" fill="#FFA500" />
+      </svg>
+    ),
+  },
+  {
+    title: "Loans for\nany car",
+    description: "Get a loan for pre-owned cars up to 14 years of age",
+    icon: (
+      <svg xmlns="http://www.w3.org/2000/svg" className="w-full h-full" viewBox="0 0 100 100" fill="none">
+        <rect width="80" height="60" rx="4" fill="#1E3A8A" />
+        <rect x="10" y="10" width="60" height="10" rx="2" fill="#FFA500" />
+        <rect x="10" y="30" width="60" height="10" rx="2" fill="#FFA500" />
+        <circle cx="80" cy="80" r="20" fill="#FFA500" />
+        <path d="M75 80H85M80 75V85" stroke="#1E3A8A" strokeWidth="4" />
+      </svg>
+    ),
+  },
+]
+
 function Financing() {
   return (
     
@@ -42,7 +95,7 @@ function Financing() {
         </div>
        <div className="md:w-1/2">
         <img
-          src="./src/Img/loan image.png"
+          src="./src/Img/loan img.png"
           // alt="Car Loan Illustration"
           className="w-full max-w-md mx-auto"
         />
@@ -186,19 +239,49 @@ function Financing() {
 
         <div className="md:w-8/6 mt-[80px] ">
         <img
-          src="./src/Img/Screenshot_2024-09-28_114214-removebg-preview.png"
+          src="./src/Img/interest.jpg"
           // alt="Car Loan Illustration"
           className="w-full max-w-md mx-auto"
         />
       </div>
 
         </div>
+      </div> 
+    </div>
+
+    </div>
+           
+    <div className="bg-white py-12 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto">
+        <h2 className="text-4xl font-bold mb-12 text-center">
+          Why choose <span className="text-orange-500">CarsNagpur</span> loans?
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {features.map((feature, index) => (
+            <div key={index} className="flex flex-col items-center text-center">
+              <div className="w-32 h-32 mb-6">{feature.icon}</div>
+              <h3 className="text-xl font-semibold mb-2 text-navy-900 whitespace-pre-line">
+                {feature.title}
+              </h3>
+              <p className="text-sm text-gray-600">{feature.description}</p>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
 
+
+           
     </div>
 
-    </div>
+
+
+
+
+
+
+
+
   )
 }
 

@@ -3,11 +3,15 @@ import { FaFacebookF, FaTwitter, FaYoutube, FaLinkedinIn, FaInstagram } from 're
 
 function Footer() {
   return (
-    <div>
-      <footer className="bg-white text-gray-800 py-8">
+    <div className='bg-gray-300'>
+      <footer className="bg-cover bg-gray-200 text-gray-800 py-8"  >
+        
         <div className="container mx-auto px-4">
+          
           <div className="flex justify-center mb-8">
+           
             <img src="./src/Img/carlogo4.png" alt="CarsNagpur Logo" className="h-12 mr-auto" />
+            
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
@@ -18,12 +22,12 @@ function Footer() {
                   { label: 'Contact us', href: '/contact' },
                   { label: 'Car insurance', href: '/insurance' },
                   { label: 'About us', href: '/about' },
-                  { label: 'Privacy policy', href: '/privacy' },
+                  // { label: 'Privacy policy', href: '/privacy' },
                   { label: 'Terms and conditions', href: '/terms' },
                   { label: 'FAQ', href: '/faq' },
                   { label: 'Testimonials', href: '/testimonials' },
-                  { label: 'Blog', href: '/blog' },
-                  { label: 'CarsNagpur finance', href: '/finance' },
+                  // { label: 'Blog', href: '/blog' },
+                  { label: 'CarsNagpur finance', href: '/financing' },
                   { label: 'Explore new cars', href: '/new-cars' }
                 ].map((item, index) => (
                   <li key={index}>
@@ -39,7 +43,7 @@ function Footer() {
                 {[
                   { label: 'Check challan', href: '/challan' },
                   { label: 'Sell used car', href: '/sell-used-car' },
-                  { label: 'Used car valuation', href: '/used-car-valuation' }
+                  // { label: 'Used car valuation', href: '/used-car-valuation' }
                 ].map((item, index) => (
                   <li key={index}>
                     <a href={item.href} className="hover:text-blue-600">{item.label}</a>
