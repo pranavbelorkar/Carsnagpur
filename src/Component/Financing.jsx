@@ -68,63 +68,66 @@ function Financing() {
   return (
     
     <div>
-<div className="bg-gray-900 h-auto text-white p-8 flex flex-col md:flex-row items-center justify-between">
-  {/* Left Section - Text Content */}
-  <div className="md:w-1/2 mb-8 md:mb-0 text-center md:text-left">
-    <h1 className="text-3xl md:text-4xl font-bold mb-4 leading-tight">
-      Drive your dream car with ease – Quick <br />
-      and <span className="text-orange-500">Simple Car Loans</span>
-    </h1>
-    <p className="text-gray-400 mb-6">
-      Your dream car is just a quick loan away – approved in minutes!
-    </p>
-    
-    {/* Loan Features */}
-    <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
-      <LoanFeature title="Get up to" value="0" subtitle="Down payment" />
-      <LoanFeature title="Tenure up to" value="72" subtitle="Months" />
-      <LoanFeature title="Interest from" value="12%" subtitle="p.a." />
+      <div className="bg-gray-900 h-[620px] text-white p-8 flex flex-col md:flex-row items-center justify-between">
+        <div className="md:w-1/2 mb-8 md:mb-0">
+        <h1 className="text-4xl md:text-4xl font-bold mb-4">
+        Drive your dream car with ease – Quick <br />
+        and <span className="text-orange-500">Simple Car Loans</span>
+        </h1>
+        <br/>
+ 
+        <p className="text-gray-400 mb-10">
+        Your dream car is just a quick loan away – approved in minutes!
+        </p>
+        <div className="grid grid-cols-3 gap-4 mb-8">
+          <LoanFeature title="Get up to" value="0" subtitle="Down payment" />
+          <LoanFeature title="Tenure up to" value="72" subtitle="Months" />
+          <LoanFeature title="Interest from" value="12%" subtitle="p.a." />
+        </div>
+        <br/>
+        
+        <button className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-full transition duration-300">
+          Check eligibility in 2 min
+        </button>
+        {/* <p className="text-sm text-gray-400 mt-4">
+          Get Free CIBIL score with your offer!
+        </p> */}
+        </div>
+       <div className="md:w-1/2">
+        <img
+          src="./src/Img/loan image.png"
+          // alt="Car Loan Illustration"
+          className="w-full max-w-md mx-auto"
+        />
+      </div>
     </div>
-    
-    {/* Button */}
-    <button className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-full transition duration-300">
-      Check eligibility in 2 min
-    </button>
-  </div>
 
-  {/* Right Section - Image */}
-  <div className="md:w-1/2 w-full">
-    <img
-      src="./public/Img/loan img.png"
-      alt="Car Loan Illustration"
-      className="w-full h-auto max-w-sm mx-auto md:max-w-md"
-    />
-  </div>
-</div>
+
+
+    <div className="bg-gray-700 h-[300px] text-white p-8 flex flex-col md:flex-row items-center justify-between">
+      <div className="md:w-1/4 mb-8 md:mb-0">
+        <h1 className="text-5xl md:text-5xl font-bold mb-4">
+            Financing by <br />
+             <span className="text-orange-500"> CarsNagpur </span>
+        </h1>
+        </div>
 
 
 
 
-<div className="bg-gray-700 h-[300px] text-white p-8 flex flex-col md:flex-row items-center justify-between">
-  {/* Left Section - Heading */}
-  <div className="md:w-1/4 w-full mb-8 md:mb-0 text-center md:text-left">
-    <h1 className="text-4xl md:text-5xl font-bold mb-4 leading-tight">
-      Financing by <br />
-      <span className="text-orange-500">CarsNagpur</span>
-    </h1>
-  </div>
-
-  {/* Right Section - Paragraphs */}
-  <div className="md:w-3/4 w-full text-center md:text-left">
-    <p className="mb-4 text-sm leading-relaxed">
-      Finance your dream car the way you want! Secure a pre-owned car loan up to Zero down payment, loan tenures of up to 6 years,
-      and up to 100% on-road financing. Say goodbye to the hassles of paperwork—we'll give you a loan offer in minutes with same-day, paperless approval.
-    </p>
-    <p className="text-sm leading-relaxed">
-      Regardless of your profession or background, our loan offers extend to individuals with incomes as low as ₹15,000/month. Get 360° support during the loan process and after, and discover the joy of owning your own car.
-    </p>
-  </div>
-</div>
+       
+        <div className="md:w-3/4">
+        <p className="mb-4 text-sm leading-relaxed">
+          Finance your dream car the way you want! Secure a pre-owned car loan up to Zero down payment., loan tenures of up to 6 years,
+          and up to 100% on-road financing. Say goodbye to the hassles of paperwork—we'll give you a loan offer in minutes with same
+          day, paperless approval.
+        </p>
+        <p className="text-sm leading-relaxed">
+          Regardless of your profession or background, our loan offers extend to individuals with incomes as low as ₹15,000/month. Get
+          360° support during the loan process and after, and discover the joy of owning your own car.
+        </p>
+      </div>
+    </div>
 
 
 <br/>
@@ -242,7 +245,7 @@ function Financing() {
 
         <div className="md:w-8/6 mt-[80px] ">
         <img
-          src="./public/Img/interest.jpg"
+          src="./src/Img/Screenshot_2024-09-28_114214-removebg-preview.png"
           // alt="Car Loan Illustration"
           className="w-full max-w-md mx-auto"
         />

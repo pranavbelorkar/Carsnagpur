@@ -24,13 +24,6 @@ import MyAppointment from './Component/MyAppointment'
 import MyBooking from './Component/MyBooking'
 import BecomePartner from './Component/BecomePartner'
 import MyOrder from './Component/MyOrder'
-import HelpCenter from './Component/HelpCenter'
-import FAQ from './Component/FAQ'
-import About from './Component/About'
-import ContactUs from './Component/ContactUs'
-import NewCars from './Component/NewCars'
-import Services from './Component/Services'
-import { Echallan } from './Component/Echallan'
 
 
 function App() {
@@ -114,34 +107,10 @@ function App() {
         <Route path="/my-orders" element={<MyOrder/>} />
       </Routes>
 
-      <Routes>
-        <Route path="/help" element={<HelpCenter/>} />
-      </Routes>
+      {/* <Routes>
+        <Route path="/profile" element={<ProfileSettings/>} />
+      </Routes> */}
 
-      <Routes>
-        <Route path="/faq" element={<FAQ/>} />
-      </Routes>
-
-      <Routes>
-        <Route path="/about" element={<About/>} />
-      </Routes>
-
-      <Routes>
-        <Route path="/contact" element={<ContactUs/>} />
-      </Routes>
-
-      <Routes>
-        <Route path="/sell-car" element={<NewCars/>} />
-      </Routes>
-
-      <Routes>
-        <Route path="/new-car" element={<NewCars/>} />
-      </Routes>
-
-      <Routes>
-        <Route path="/challan" element={<Echallan/>} />
-      </Routes>
- 
 
       <Footer/>
     </Router>

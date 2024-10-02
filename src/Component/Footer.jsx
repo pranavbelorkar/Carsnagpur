@@ -9,9 +9,7 @@ function Footer() {
         <div className="container mx-auto px-4">
           
           <div className="flex justify-center mb-8">
-           
-            <img src="./public/Img/carlogo4.png" alt="CarsNagpur Logo" className="h-12 mr-auto" />
-            
+            <img src="./src/Img/carlogo4.png" alt="CarsNagpur Logo" className="h-12 mr-auto" />
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
@@ -26,9 +24,9 @@ function Footer() {
                   { label: 'Terms and conditions', href: '/terms' },
                   { label: 'FAQ', href: '/faq' },
                   { label: 'Testimonials', href: '/testimonials' },
-                  // { label: 'Blog', href: '/blog' },
-                  { label: 'CarsNagpur finance', href: '/financing' },
-                  { label: 'Explore new cars', href: '/new-car' }
+                  { label: 'Blog', href: '/blog' },
+                  { label: 'CarsNagpur finance', href: '/finance' },
+                  { label: 'Explore new cars', href: '/new-cars' }
                 ].map((item, index) => (
                   <li key={index}>
                     <a href={item.href} className="hover:text-blue-600">{item.label}</a>
@@ -42,8 +40,8 @@ function Footer() {
               <ul className="space-y-2">
                 {[
                   { label: 'Check challan', href: '/challan' },
-                  { label: 'Sell used car', href: '/usedcars' },
-                  // { label: 'Used car valuation', href: '/used-car-valuation' }
+                  { label: 'Sell used car', href: '/sell-used-car' },
+                  { label: 'Used car valuation', href: '/used-car-valuation' }
                 ].map((item, index) => (
                   <li key={index}>
                     <a href={item.href} className="hover:text-blue-600">{item.label}</a>

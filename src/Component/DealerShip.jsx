@@ -8,18 +8,18 @@ import { Award, Truck, Tag, BarChart2 } from 'lucide-react'
 function DealerShip() {
   // Arrays for cities and cars
   const cities = [
-    { name: "Burdi", image: 'https://i.pinimg.com/736x/35/cf/ae/35cfaed52d34cfa0c9a4687d3b7971af.jpg' },
-    { name: "Manewada", image: 'https://i.pinimg.com/564x/71/75/e1/7175e1af4c99be42166e8d68d52a63a9.jpg' },
-    { name: "Dighori", image: 'https://i.pinimg.com/736x/1c/1b/42/1c1b42f7301525214d6298532530a95f.jpg' },
-    { name: "Vardhyaman Nagar", image: 'https://i.pinimg.com/736x/1e/13/50/1e1350ee86072add28e84f06e531162a.jpg' }, // Changed src to image
-    { name: "Somalwada", image: 'https://i.pinimg.com/736x/7b/89/50/7b895031d880dd94dab1d62e0c6b05af.jpg' },
-    { name: "Friends Colony", image: 'https://i.pinimg.com/736x/2d/ab/7e/2dab7e6de38960601d724d1cae494110.jpg' },
-    { name: "Sadar", image: 'https://i.pinimg.com/564x/90/ce/c6/90cec61c5ba04aa36c7dc50716f0cb91.jpg' }, // Corrected imager to image
-    { name: "Katolnaka", image: 'https://i.pinimg.com/564x/4c/b7/c3/4cb7c35164310fbdb02ad4a91da23319.jpg' },
-    { name: "Jaripatka", image: 'https://i.pinimg.com/736x/8a/96/f2/8a96f2b46e4ddd8485603d2e1c2656f3.jpg' },
-    { name: "Itwari", image: 'https://i.pinimg.com/564x/e9/44/ee/e944eeed27610385cd36283e9121a253.jpg' },
-    { name: "Dharampeth", image: 'https://i.pinimg.com/736x/0d/ce/77/0dce77b996b2ee08ca236c445091c593.jpg' },
-    { name: "Hudkeshwar", image: 'https://i.pinimg.com/736x/dd/37/a1/dd37a124deb5735283052da94e71b5e1.jpg' }
+    "Burdi",
+    "Manewada",
+    "Dighori",
+    "vardhyaman nagar",
+    "Somalwada",
+    "Friends colony",  
+     "Sadar",
+    "Katolnaka",
+    "Jaripatka",
+    "Itwari",
+    "Dharampeth",
+    "Hudkeshwar",
   ];
   
   const dealers = [
@@ -191,74 +191,51 @@ function DealerShip() {
         </div>
       </div>
 
-      {/* Used Luxury Cars Dealership */}
+{/* Used Luxury Cars Dealership */}
+{/* Used Luxury Cars Dealership with Swiper Carousel */}
       
-
-
-
-
-
-{/* last 3rd */}
-
-<section className="bg-gray-100 py-16 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto">
-        <h2 className="text-3xl font-bold text-center text-gray-900 sm:text-4xl mb-4">
-          WHY CHOOSE US
-        </h2>
-        <div className="h-1 w-20 bg-orange-500 mx-auto mb-12"></div>
-        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
-          {features.map((feature, index) => (
-            <div key={index} className="flex flex-col items-center text-center">
-              <div className="flex items-center justify-center h-16 w-16 rounded-full bg-orange-100 text-orange-600 mb-4">
-                {feature.icon}
+        <h2 className="text-2xl font-bold mb-4">Used Luxury Cars Dealership</h2>
+        <Swiper
+          spaceBetween={20}
+          slidesPerView={3}
+          navigation={true}
+          modules={[Navigation]}
+          className="mySwiper"
+          breakpoints={{
+            640: {
+              slidesPerView: 1,
+            },
+            768: {
+              slidesPerView: 2,
+            },
+            1024: {
+              slidesPerView: 3,
+            },
+          }}
+        >
+          {dealers.map((dealer) => (
+            <SwiperSlide key={dealer.name}>
+              <div className="w-72 border rounded-lg shadow hover:shadow-lg transition-shadow">
+                <img
+                  src={dealer.image}
+                  alt={dealer.name}
+                  className="w-full h-48 object-cover rounded-t-lg"
+                />
+                <div className="p-4">
+                  <h3 className="text-lg font-semibold text-center">{dealer.name}</h3>
+                </div>
               </div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">{feature.title}</h3>
-              <p className="text-gray-600 text-sm">{feature.description}</p>
-            </div>
+            </SwiperSlide>
           ))}
-        </div>
-        <div className="mt-12 text-center">
-          <button className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-lg transition duration-300 uppercase text-sm">
-            Learn More
-          </button>
-        </div>
-      </div>
-    </section>
+        </Swiper>
+    
 
-
-
-{/* footer above section */}
-
-<div
-  className="relative h-screen bg-cover bg-center bg-no-repeat"
-  style={{
-    backgroundImage: "url('https://images6.alphacoders.com/303/thumb-1920-303578.jpg')",
-  }}
->
-  <div className="absolute inset-0 bg-black bg-opacity-30"></div>
-  <div className="relative z-10 flex items-center h-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div className="w-full md:w-2/3 lg:w-1/2">
-      <div className="bg-orange-400 p-8 rounded-lg shadow-lg relative">
-        <div className="absolute -bottom-4 -left-4 w-8 h-8 bg-orange-400 transform rotate-45"></div>
-        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-          CAR DEALERSHIP AUTOMOTIVE 
-        </h1>
-        <p className="text-gray-800 text-sm sm:text-base">
-          With specialists on hand to help with any part of the car shopping or vehicle ownership experience, Motors provides financing, car service and a great selection of vehicles for luxury car shoppers in Chicago, IL. Motors is ultimate Automotive, Car Dealer WordPress theme.
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-      
-      {/* For Your Further Research */}
-      <section className="p-6 bg-gray-50 rounded-lg shadow-lg">
+{/* For Your Further Research */}
+<section className="p-6 bg-gray-50 rounded-lg shadow-lg">
         <h2 className="text-xl font-semibold mb-6">For Your Further Research</h2>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
           <div className="flex items-center space-x-4 p-4 border rounded-lg shadow">
-            <img src="https://imgd.aeplcdn.com/1056x594/n/t4frrua_1559467.jpg?q=80" alt="Used Cars Icon" className="w-10 h-10" />
+            <img src="/images/icon1.png" alt="Used Cars Icon" className="w-10 h-10" />
             <div>
               <p className="font-semibold">Used Cars In Gurgaon</p>
               <a href="#" className="text-blue-500 hover:underline">View All (2445)</a>

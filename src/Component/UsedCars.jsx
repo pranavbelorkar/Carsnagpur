@@ -2,7 +2,42 @@ import React, { useState } from "react";
 import Cars from "./Cars";
 import AllCars from "./AllCars";
 
+
 function UsedCars({ onFilterChange }) {
+  //need help start
+  const [isOpen, setIsOpen] = useState(false)
+
+  const togglePopup = () => setIsOpen(!isOpen)
+
+  const sections = [
+    {
+      title: 'WhatsApp',
+      icon: <MessageCircle className="w-6 h-6" />,
+      content: 'Chat with us on WhatsApp',
+      action: () => window.open('https://wa.me/09975288300', '_blank')
+    },
+    {
+      title: 'Email',
+      icon: <Mail className="w-6 h-6" />,
+      content: 'Send us an email',
+      action: () => window.location.href = 'mailto:carsnagpur8@gmail.com'
+    },
+    {
+      title: 'FAQs',
+      icon: <HelpCircle className="w-6 h-6" />,
+      content: 'Check our frequently asked questions',
+      action: () => window.location.href = '/faqs'
+    },
+    {
+      title: 'Request a Call Back',
+      icon: <PhoneCall className="w-6 h-6" />,
+      content: 'We\'ll call you back',
+      action: () => window.location.href = '/request-callback'
+    }
+  ]
+
+//need help end
+
   const [budget, setBudget] = useState([150000, 2500000]);
   const [makes, setMakes] = useState({
     Tata: false,
@@ -92,6 +127,47 @@ function UsedCars({ onFilterChange }) {
           })()}
         </div>
       </div>
+
+
+      {/* Need Help */}
+      <div className="fixed bottom-4 right-4 z-50">
+      <button
+        onClick={togglePopup}
+        className="bg-orange-500 text-white p-4 rounded-full shadow-lg hover:bg-orange-600 transition-colors duration-300"
+      >
+        Need Help?
+      </button>
+
+      {isOpen && (
+        <div className="absolute bottom-16 right-0 w-72 bg-white rounded-lg shadow-xl overflow-hidden">
+          <div className="bg-orange-500 text-white p-4 flex justify-between items-center">
+            <h3 className="text-lg font-semibold">How can we help?</h3>
+            <button onClick={togglePopup} className="text-white hover:text-gray-200">
+              <X className="w-6 h-6" />
+            </button>
+          </div>
+          <div className="p-4 space-y-4">
+            {sections.map((section, index) => (
+              <div
+                key={index}
+                className="flex items-center space-x-4 p-2 rounded-lg hover:bg-gray-100 cursor-pointer transition-colors duration-300"
+                onClick={section.action}
+              >
+                <div className="bg-blue-100 p-2 rounded-full">
+                  {section.icon}
+                </div>
+                <div>
+                  <h4 className="font-semibold">{section.title}</h4>
+                  <p className="text-sm text-gray-600">{section.content}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+    </div>
+   {/* need help end */}
+
     </div>
   );
 }

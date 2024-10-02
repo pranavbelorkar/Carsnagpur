@@ -67,8 +67,8 @@ const Navbar = () => {
           <div className="flex justify-between h-20">
             {/* Logo Section */}
             <div className="flex items-center">
-              <Link to="/" className="flex-shrink-0 flex items-center -ml-20">
-                <img src="./public/Img/carlogo4.png" alt="CarNagpur Logo" className="h-[65px] w-[250px] -ml-10" />
+              <Link to="/home" className="flex-shrink-0 flex items-center">
+                <img src="./src/Img/carlogo4.png" alt="CarNagpur Logo" className="h-[65px] w-[250px]" />
               </Link>
             </div>
 
@@ -93,6 +93,8 @@ const Navbar = () => {
                 items={[
                   { type: 'link', label: 'Financing', href: '/financing', icon: FileText },
                   { type: 'link', label: 'Insurance', href: '/insurance', icon: Clipboard },
+                  { type: 'link', label: 'Vehicle History', href: '/vehicle-history', icon: Book },
+                  { type: 'link', label: 'Trade-In Value', href: '/trade-in', icon: Package }
                 ]}
               />
 
@@ -103,6 +105,7 @@ const Navbar = () => {
                   { type: 'link', label: 'Showrooms', href: '/showrooms', icon: Building },
                   { type: 'link', label: 'Service Centers', href: '/service-centers', icon: Settings },
                   { type: 'link', label: 'Dealerships', href: '/dealerships', icon: Users },
+                  { type: 'link', label: 'Test Drive Locations', href: '/test-drive-locations', icon: MapPin }
                 ]}
               />
             </div>
@@ -193,35 +196,6 @@ const Navbar = () => {
                   { type: 'link', label: 'Test Drive Locations', href: '/test-drive-locations', icon: MapPin }
                 ]}
               />
-
-              {/* Account and Location in Mobile Menu */}
-              <Dropdown
-                label={
-                  <div className="flex items-center">
-                    <User className="h-6 w-6 mr-1" />
-                    <span className="text-sm font-medium">Account</span>
-                  </div>
-                }
-                items={[
-                  {
-                    type: 'link',
-                    label: 'Log In/Sign Up',
-                    href: '/login',
-                    icon: User,
-                  },
-                  { type: 'link', label: 'My Profile', href: '/profile', icon: Settings },
-                  { type: 'link', label: 'My Appointments', href: '/my-appointments', icon: Calendar, tag: 'SELL' },
-                  { type: 'link', label: 'My Bookings', href: '/my-bookings', icon: Book, tag: 'BUY' },
-                  { type: 'link', label: 'My Orders', href: '/my-orders', icon: Package },
-                ]}
-              />
-              <button
-                onClick={handleLocationClick}
-                className="flex items-center text-black-800 hover:text-orange-600 focus:outline-none"
-              >
-                <MapPin className="h-6 w-6 mr-1" />
-                <span className="text-sm font-medium">{location || "Nagpur"}</span>
-              </button>
             </div>
           </div>
         )}
