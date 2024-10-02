@@ -14,13 +14,13 @@ function UsedCars({ onFilterChange }) {
       title: 'WhatsApp',
       icon: <MessageCircle className="w-6 h-6" />,
       content: 'Chat with us on WhatsApp',
-      action: () => window.open('https://wa.me/1234567890', '_blank')
+      action: () => window.open('https://wa.me/09975288300', '_blank')
     },
     {
       title: 'Email',
       icon: <Mail className="w-6 h-6" />,
       content: 'Send us an email',
-      action: () => window.location.href = 'mailto:support@example.com'
+      action: () => window.location.href = 'mailto:carsnagpur8@gmail.com'
     },
     {
       title: 'FAQs',
