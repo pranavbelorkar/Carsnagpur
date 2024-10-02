@@ -97,7 +97,11 @@ export function About() {
       <div className="bg-gray-300 text-white py-16">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold mb-4  text-blue-900">Ready to get started?</h2>
+<<<<<<< HEAD
           <p className="text-xl mb-8  text-blue-900">Join thousands of satisfied customers in Nagpur who have found their perfect car through CarsNagpur.</p>
+=======
+          <p className="text-xl mb-8">Join thousands of satisfied customers in Nagpur who have found their perfect car through CarsNagpur.</p>
+>>>>>>> 8bd3effddf24d554a52e4af66187d4c9d07d64cd
           <Button className="bg-white text-orange-600 hover:bg-orange-50">Browse Cars Now</Button>
         </div>
       </div>

@@ -11,10 +11,17 @@ function DealerShip() {
     { name: "Burdi", image: 'https://i.pinimg.com/736x/35/cf/ae/35cfaed52d34cfa0c9a4687d3b7971af.jpg' },
     { name: "Manewada", image: 'https://i.pinimg.com/564x/71/75/e1/7175e1af4c99be42166e8d68d52a63a9.jpg' },
     { name: "Dighori", image: 'https://i.pinimg.com/736x/1c/1b/42/1c1b42f7301525214d6298532530a95f.jpg' },
+<<<<<<< HEAD
     { name: "Vardhyaman Nagar", image: 'https://i.pinimg.com/736x/1e/13/50/1e1350ee86072add28e84f06e531162a.jpg' }, // Changed src to image
     { name: "Somalwada", image: 'https://i.pinimg.com/736x/7b/89/50/7b895031d880dd94dab1d62e0c6b05af.jpg' },
     { name: "Friends Colony", image: 'https://i.pinimg.com/736x/2d/ab/7e/2dab7e6de38960601d724d1cae494110.jpg' },
     { name: "Sadar", image: 'https://i.pinimg.com/564x/90/ce/c6/90cec61c5ba04aa36c7dc50716f0cb91.jpg' }, // Corrected imager to image
+=======
+    { name: "Vardhyaman Nagar", image: 'https://i.pinimg.com/736x/1e/13/50/1e1350ee86072add28e84f06e531162a.jpg' }, // Changed `src` to `image`
+    { name: "Somalwada", image: 'https://i.pinimg.com/736x/7b/89/50/7b895031d880dd94dab1d62e0c6b05af.jpg' },
+    { name: "Friends Colony", image: 'https://i.pinimg.com/736x/2d/ab/7e/2dab7e6de38960601d724d1cae494110.jpg' },
+    { name: "Sadar", image: 'https://i.pinimg.com/564x/90/ce/c6/90cec61c5ba04aa36c7dc50716f0cb91.jpg' }, // Corrected `imager` to `image`
+>>>>>>> 8bd3effddf24d554a52e4af66187d4c9d07d64cd
     { name: "Katolnaka", image: 'https://i.pinimg.com/564x/4c/b7/c3/4cb7c35164310fbdb02ad4a91da23319.jpg' },
     { name: "Jaripatka", image: 'https://i.pinimg.com/736x/8a/96/f2/8a96f2b46e4ddd8485603d2e1c2656f3.jpg' },
     { name: "Itwari", image: 'https://i.pinimg.com/564x/e9/44/ee/e944eeed27610385cd36283e9121a253.jpg' },
@@ -194,6 +201,7 @@ function DealerShip() {
       {/* Used Luxury Cars Dealership */}
       
 
+<<<<<<< HEAD
 
 
 
@@ -205,6 +213,15 @@ function DealerShip() {
         <h2 className="text-3xl font-bold text-center text-gray-900 sm:text-4xl mb-4">
           WHY CHOOSE US
         </h2>
+=======
+{/* last 3rd */}
+
+<section className="bg-gray-100 py-16 px-4 sm:px-6 lg:px-8">
+    <div className="max-w-7xl mx-auto">
+      <h2 className="text-3xl font-bold text-center text-gray-900 sm:text-4xl mb-4">
+        WHY CHOOSE US
+      </h2>
+>>>>>>> 8bd3effddf24d554a52e4af66187d4c9d07d64cd
         <div className="h-1 w-20 bg-orange-500 mx-auto mb-12"></div>
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {features.map((feature, index) => (
@@ -223,7 +240,11 @@ function DealerShip() {
           </button>
         </div>
       </div>
+<<<<<<< HEAD
     </section>
+=======
+</section>
+>>>>>>> 8bd3effddf24d554a52e4af66187d4c9d07d64cd
 
 
 
@@ -251,13 +272,20 @@ function DealerShip() {
   </div>
 </div>
 
+<<<<<<< HEAD
 
       
+=======
+>>>>>>> 8bd3effddf24d554a52e4af66187d4c9d07d64cd
       {/* For Your Further Research */}
       <section className="p-6 bg-gray-50 rounded-lg shadow-lg">
         <h2 className="text-xl font-semibold mb-6">For Your Further Research</h2>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+<<<<<<< HEAD
           <div className="flex items-center space-x-4 p-4 border rounded-lg shadow">
+=======
+          <div className="flex items-center space-x-4 p-4 border rounded-lg shadow ">
+>>>>>>> 8bd3effddf24d554a52e4af66187d4c9d07d64cd
             <img src="https://imgd.aeplcdn.com/1056x594/n/t4frrua_1559467.jpg?q=80" alt="Used Cars Icon" className="w-10 h-10" />
             <div>
               <p className="font-semibold">Used Cars In Gurgaon</p>

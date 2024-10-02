@@ -30,7 +30,10 @@ import About from './Component/About'
 import ContactUs from './Component/ContactUs'
 import NewCars from './Component/NewCars'
 import Services from './Component/Services'
+<<<<<<< HEAD
 import { Echallan } from './Component/Echallan'
+=======
+>>>>>>> 8bd3effddf24d554a52e4af66187d4c9d07d64cd
 
 
 function App() {
@@ -134,6 +137,7 @@ function App() {
         <Route path="/sell-car" element={<NewCars/>} />
       </Routes>
 
+<<<<<<< HEAD
       <Routes>
         <Route path="/new-car" element={<NewCars/>} />
       </Routes>
@@ -141,6 +145,8 @@ function App() {
       <Routes>
         <Route path="/challan" element={<Echallan/>} />
       </Routes>
+=======
+>>>>>>> 8bd3effddf24d554a52e4af66187d4c9d07d64cd
  
 
       <Footer/>

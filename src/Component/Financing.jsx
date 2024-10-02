@@ -68,6 +68,7 @@ function Financing() {
   return (
     
     <div>
+<<<<<<< HEAD
 <div className="bg-gray-900 h-auto text-white p-8 flex flex-col md:flex-row items-center justify-between">
   {/* Left Section - Text Content */}
   <div className="md:w-1/2 mb-8 md:mb-0 text-center md:text-left">
@@ -84,6 +85,40 @@ function Financing() {
       <LoanFeature title="Get up to" value="0" subtitle="Down payment" />
       <LoanFeature title="Tenure up to" value="72" subtitle="Months" />
       <LoanFeature title="Interest from" value="12%" subtitle="p.a." />
+=======
+      <div className="bg-gray-900 h-[620px] text-white p-8 flex flex-col md:flex-row items-center justify-between">
+        <div className="md:w-1/2 mb-8 md:mb-0">
+        <h1 className="text-4xl md:text-4xl font-bold mb-4">
+        Drive your dream car with ease – Quick <br />
+        and <span className="text-orange-500">Simple Car Loans</span>
+        </h1>
+        <br/>
+ 
+        <p className="text-gray-400 mb-10">
+        Your dream car is just a quick loan away – approved in minutes!
+        </p>
+        <div className="grid grid-cols-3 gap-4 mb-8">
+          <LoanFeature title="Get up to" value="0" subtitle="Down payment" />
+          <LoanFeature title="Tenure up to" value="72" subtitle="Months" />
+          <LoanFeature title="Interest from" value="12%" subtitle="p.a." />
+        </div>
+        <br/>
+        
+        <button className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-full transition duration-300">
+          Check eligibility in 2 min
+        </button>
+        {/* <p className="text-sm text-gray-400 mt-4">
+          Get Free CIBIL score with your offer!
+        </p> */}
+        </div>
+       <div className="md:w-1/2">
+        <img
+          src="./src/Img/loan img.png"
+          // alt="Car Loan Illustration"
+          className="w-full max-w-md mx-auto"
+        />
+      </div>
+>>>>>>> 8bd3effddf24d554a52e4af66187d4c9d07d64cd
     </div>
     
     {/* Button */}
@@ -242,7 +277,11 @@ function Financing() {
 
         <div className="md:w-8/6 mt-[80px] ">
         <img
+<<<<<<< HEAD
           src="./public/Img/interest.jpg"
+=======
+          src="./src/Img/interest.jpg"
+>>>>>>> 8bd3effddf24d554a52e4af66187d4c9d07d64cd
           // alt="Car Loan Illustration"
           className="w-full max-w-md mx-auto"
         />

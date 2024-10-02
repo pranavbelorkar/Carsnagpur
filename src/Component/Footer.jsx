@@ -10,7 +10,11 @@ function Footer() {
           
           <div className="flex justify-center mb-8">
            
+<<<<<<< HEAD
             <img src="./public/Img/carlogo4.png" alt="CarsNagpur Logo" className="h-12 mr-auto" />
+=======
+            <img src="./src/Img/carlogo4.png" alt="CarsNagpur Logo" className="h-12 mr-auto" />
+>>>>>>> 8bd3effddf24d554a52e4af66187d4c9d07d64cd
             
           </div>
 
@@ -28,7 +32,11 @@ function Footer() {
                   { label: 'Testimonials', href: '/testimonials' },
                   // { label: 'Blog', href: '/blog' },
                   { label: 'CarsNagpur finance', href: '/financing' },
+<<<<<<< HEAD
                   { label: 'Explore new cars', href: '/new-car' }
+=======
+                  { label: 'Explore new cars', href: '/new-cars' }
+>>>>>>> 8bd3effddf24d554a52e4af66187d4c9d07d64cd
                 ].map((item, index) => (
                   <li key={index}>
                     <a href={item.href} className="hover:text-blue-600">{item.label}</a>
@@ -42,7 +50,11 @@ function Footer() {
               <ul className="space-y-2">
                 {[
                   { label: 'Check challan', href: '/challan' },
+<<<<<<< HEAD
                   { label: 'Sell used car', href: '/usedcars' },
+=======
+                  { label: 'Sell used car', href: '/sell-used-car' },
+>>>>>>> 8bd3effddf24d554a52e4af66187d4c9d07d64cd
                   // { label: 'Used car valuation', href: '/used-car-valuation' }
                 ].map((item, index) => (
                   <li key={index}>

@@ -68,7 +68,11 @@ const Navbar = () => {
             {/* Logo Section */}
             <div className="flex items-center">
               <Link to="/" className="flex-shrink-0 flex items-center -ml-20">
+<<<<<<< HEAD
                 <img src="./public/Img/carlogo4.png" alt="CarNagpur Logo" className="h-[65px] w-[250px] -ml-10" />
+=======
+                <img src="./src/Img/carlogo4.png" alt="CarNagpur Logo" className="h-[65px] w-[250px] -ml-10" />
+>>>>>>> 8bd3effddf24d554a52e4af66187d4c9d07d64cd
               </Link>
             </div>
 
@@ -93,6 +97,11 @@ const Navbar = () => {
                 items={[
                   { type: 'link', label: 'Financing', href: '/financing', icon: FileText },
                   { type: 'link', label: 'Insurance', href: '/insurance', icon: Clipboard },
+<<<<<<< HEAD
+=======
+                  // { type: 'link', label: 'Vehicle History', href: '/vehicle-history', icon: Book },
+                  // { type: 'link', label: 'Trade-In Value', href: '/trade-in', icon: Package }
+>>>>>>> 8bd3effddf24d554a52e4af66187d4c9d07d64cd
                 ]}
               />
 
@@ -103,6 +112,10 @@ const Navbar = () => {
                   { type: 'link', label: 'Showrooms', href: '/showrooms', icon: Building },
                   { type: 'link', label: 'Service Centers', href: '/service-centers', icon: Settings },
                   { type: 'link', label: 'Dealerships', href: '/dealerships', icon: Users },
+<<<<<<< HEAD
+=======
+                  
+>>>>>>> 8bd3effddf24d554a52e4af66187d4c9d07d64cd
                 ]}
               />
             </div>
@@ -194,6 +207,7 @@ const Navbar = () => {
                 ]}
               />
 
+<<<<<<< HEAD
               {/* Account and Location in Mobile Menu */}
               <Dropdown
                 label={
@@ -222,6 +236,10 @@ const Navbar = () => {
                 <MapPin className="h-6 w-6 mr-1" />
                 <span className="text-sm font-medium">{location || "Nagpur"}</span>
               </button>
+=======
+              <Link to="/cart" className="text-blue-900 hover:text-orange-600 px-3 py-2 rounded-md text-sm font-medium">Cart</Link>
+              <Link to="/login" className="text-blue-900 hover:text-orange-600 px-3 py-2 rounded-md text-sm font-medium">Log In</Link>
+>>>>>>> 8bd3effddf24d554a52e4af66187d4c9d07d64cd
             </div>
           </div>
         )}
