@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { X } from 'lucide-react'; // Ensure lucide-react is installed with: npm install lucide-react
 import axios from 'axios'; // Ensure axios is installed with: npm install axios
 import { useNavigate } from 'react-router-dom'; // Ensure react-router-dom is installed with: npm install react-router-dom
+import { div } from 'framer-motion/client';
+import { Link } from 'react-router-dom';
 
 // Input component with styles
 const Input = ({ className = '', ...props }) => (
@@ -24,12 +26,15 @@ const Modal = ({ isOpen, onClose, children }) => {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
+    
+    <div className="fixed inset-0 bg-black bg-opacity-90 flex justify-center items-center z-50 ">
       <div className="bg-white rounded-lg shadow-lg max-w-4xl w-full overflow-hidden">
         <div className="flex justify-end p-4">
+          <Link to="/">
           <button onClick={onClose} className="text-gray-500 hover:text-gray-700">
             <X className="h-6 w-6" />
           </button>
+          </Link>
         </div>
         {children}
       </div>
@@ -97,7 +102,7 @@ export function Login() {
       const response = await axios.post('http://localhost:5000/api/verify-otp', { phoneNumber, otp: otpValue });
       console.log('OTP verified:', response.data);
       setError('');
-      navigate('/home'); // Redirect user after successful OTP verification
+      navigate('/'); // Redirect user after successful OTP verification
     } catch (err) {
       setError('Invalid OTP. Please try again.');
     } finally {
@@ -121,7 +126,7 @@ export function Login() {
       <div className="flex flex-col lg:flex-row bg-white">
         {/* Left side - Image section */}
         <div
-          className="hidden lg:flex lg:w-1/2 bg-cover bg-center h-[340px] -mt-[56px]"
+          className="hidden lg:flex lg:w-1/2 bg-cover bg-center h-[368px] -mt-[56px]"
           style={{ backgroundImage: "url('https://media.istockphoto.com/id/1401715786/photo/happy-family-piggybacking-after-buying-a-new-car-in-a-showroom.jpg?s=612x612&w=0&k=20&c=hnNdjcrSmKQAsP4A7KFU_BWrJVMk2evUxaViNdo_LZA=')" }}
         >
           <div className="flex items-center h-full w-full bg-gray-900 bg-opacity-40">
