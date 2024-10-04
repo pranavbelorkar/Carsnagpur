@@ -4,6 +4,7 @@ import { FaFacebookF, FaTwitter, FaYoutube, FaLinkedinIn, FaInstagram } from 're
 function Footer() {
   return (
     <div className='bg-gray-300'>
+<<<<<<< HEAD
       <footer
         className="bg-gray-200 text-gray-800 py-8 relative"
         style={{
@@ -12,6 +13,9 @@ function Footer() {
           backgroundPosition: 'center',
         }}
       >
+=======
+      <footer className="bg-cover bg-gray-200 text-gray-800 py-8"  >
+>>>>>>> e2a32309a94624c1563e43b651f387835ff51003
         
         <div className="container mx-auto px-4">
           
@@ -88,12 +92,35 @@ function Footer() {
             </div>
           </div>
 
+<<<<<<< HEAD
           <div className="text-center text-sm text-gray-900">
             © 2024 CarsNagpur.
             <a href="https://www.pskitservices.com/">
               <b>
                 @ A project of PSK TECHNOLOGIES PVT. LTD.
               </b>
+=======
+          {/* Navbar added below the terms and conditions part */}
+          {/* <nav className="border-t border-gray-200 pt-8 mb-8">
+            <ul className="flex flex-wrap justify-center space-x-6 text-sm">
+              <li><a href="/" className="text-gray-600 hover:text-blue-600">Home</a></li>
+              <li><a href="/buy-car" className="text-gray-600 hover:text-blue-600">Buy Car</a></li>
+              <li><a href="/sell-car" className="text-gray-600 hover:text-blue-600">Sell Car</a></li>
+              <li><a href="/car-loan" className="text-gray-600 hover:text-blue-600">Car Loan</a></li>
+              <li><a href="/car-insurance" className="text-gray-600 hover:text-blue-600">Car Insurance</a></li>
+              <li><a href="/about" className="text-gray-600 hover:text-blue-600">About Us</a></li>
+              <li><a href="/contact" className="text-gray-600 hover:text-blue-600">Contact</a></li>
+            </ul>
+          </nav> */}
+
+          <div className="text-center text-sm  text-gray-900  ">
+            
+            © 2024 CarsNagpur.
+           <a href="https://www.pskitservices.com/">
+            <b >
+            @ A project of PSK TECHNOLOGIES PVT. LTD.
+            </b>
+>>>>>>> e2a32309a94624c1563e43b651f387835ff51003
             </a>
           </div>
         </div>

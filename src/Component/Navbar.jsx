@@ -182,9 +182,17 @@ const Navbar = () => {
                 items={[
                   { type: 'link', label: 'Financing', href: '/financing', icon: FileText },
                   { type: 'link', label: 'Insurance', href: '/insurance', icon: Clipboard },
+<<<<<<< HEAD
                 ]}
               />
               
+=======
+                  { type: 'link', label: 'Vehicle History', href: '/vehicle-history', icon: Book },
+                  { type: 'link', label: 'Trade-In Value', href: '/trade-in', icon: Package }
+                ]}
+              />
+
+>>>>>>> e2a32309a94624c1563e43b651f387835ff51003
               {/* Places Dropdown */}
               <Dropdown
                 label="Places"
@@ -192,6 +200,10 @@ const Navbar = () => {
                   { type: 'link', label: 'Showrooms', href: '/showrooms', icon: Building },
                   { type: 'link', label: 'Service Centers', href: '/service-centers', icon: Settings },
                   { type: 'link', label: 'Dealerships', href: '/dealerships', icon: Users },
+<<<<<<< HEAD
+=======
+                  { type: 'link', label: 'Test Drive Locations', href: '/test-drive-locations', icon: MapPin }
+>>>>>>> e2a32309a94624c1563e43b651f387835ff51003
                 ]}
               />
               <Dropdown
